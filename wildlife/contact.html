@@ -44,7 +44,7 @@
         <h1>Contact Us</h1>
 
 
-        <form style="max-width: 900px" class="mx-auto">
+        <form>
             <div class="row g-4">
                 <div class="md:col-6">
                     <div class="form-field">
@@ -68,14 +68,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:col-6">
-                    <div>
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
                         <label for="tourType" class="form-label">Select a tour type</label>
-                        <select class="form-control" id="tourType" size="3" aria-label="Size 3 select example">
-                            <option selected>Open</option>
-                            <option value="1">Full Tour</option>
-                            <option value="2">Half-Day Tour</option>
-                            <option value="3">6 Building Speed Tour</option>
+                        <select class="form-control" id="tourType">
+                            <option value="">Choose a tour type</option>
+                            <option value="full">Full Tour</option>
+                            <option value="half">Half-Day Tour</option>
+                            <option value="speed">6 Building Speed Tour</option>
                         </select>
                     </div>
                 </div>
@@ -96,7 +96,9 @@
                 </div>
 
             </div>
-            <button class="btn-solid theme-primary mt-5">Contact Us</button>
+            <div class="col-12">
+                <button button type="submit" class="btn-solid theme-primary mt-5">Contact Us</button>
+            </div>
         </form>
 
     </main>
